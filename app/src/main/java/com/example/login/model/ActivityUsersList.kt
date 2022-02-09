@@ -34,7 +34,7 @@ class ActivityUsersList : AppCompatActivity() {
     }
 
     /**
-     * This method is to initialize views
+     * Para iniciar as views
      */
     private fun initViews() {
         textViewName = findViewById(R.id.textViewName) as AppCompatTextView
@@ -42,7 +42,7 @@ class ActivityUsersList : AppCompatActivity() {
     }
 
     /**
-     * This method is to initialize objects to be used
+     * Para iniciar os objetos
      */
     private fun initObjects() {
         listUsers = ArrayList<User>()
@@ -63,7 +63,7 @@ class ActivityUsersList : AppCompatActivity() {
     }
 
     /**
-     * This class is to fetch all user records from SQLite
+     * classe para buscar todos os registros de usuário do SQLite
      */
     public final inner class GetDataFromSQLite : AsyncTask<Void, Void, ArrayList<User>>() {
 

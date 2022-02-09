@@ -8,6 +8,7 @@
     <string name="text_login">Login</string>
     <string name="text_register">Cadastrar</string>
     <string name="error_message_name">Digite seu nome completo</string>
+    <string name="error_message_coren">Digite seu coren</string>
     <string name="error_message_email">Digite um email válido</string>
     <string name="error_message_age">Digite a idade</string>
     <string name="error_message_password">Digite a senha</string>
@@ -24,4 +25,5 @@
     <string name="tela_de_cadastro">Tela de Cadastro</string>
     <string name="med_now">MED.NOW</string>
     <string name="text_helper">Obrigatório</string>
+    <string name="hint_coren">Coren</string>
 </resources>

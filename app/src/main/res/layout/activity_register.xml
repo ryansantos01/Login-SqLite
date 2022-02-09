@@ -81,6 +81,35 @@
             android:layout_marginBottom="2dp"
             android:layout_marginTop="5dp"
             android:fontFamily="@font/poppins_medium"
+            android:text="Coren"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutCoren"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EditTextCoren"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_caixa"
+                android:fontFamily="@font/poppins_medium"
+                android:foregroundTint="#191717"
+                android:hint="@string/hint_coren"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_medium"
             android:text="Insira seu email:"
             android:textColor="#FFFFFF"
             android:textSize="20sp" />
@@ -91,14 +120,14 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/textInputEditTextEmail"
+                android:id="@+id/EditTextEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/background_caixa"
                 android:fontFamily="@font/poppins_medium"
                 android:foregroundTint="#191717"
                 android:hint="@string/hint_email"
-                android:inputType="text"
+                android:inputType="textEmailAddress"
                 android:maxLines="1"
                 android:textColor="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -117,10 +146,14 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayoutPassword"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="16"
+            app:counterTextColor="@color/cinzaclaro"
+            app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/textInputEditTextPassword"
+                android:id="@+id/EditTextPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/background_caixa"
@@ -128,6 +161,7 @@
                 android:foregroundTint="#1E1D1D"
                 android:hint="@string/hint_password"
                 android:inputType="textPassword"
+                android:maxLength="16"
                 android:maxLines="1"
                 android:textColor="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -146,7 +180,11 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayoutConfirmPassword"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="16"
+            app:counterTextColor="@color/cinzaclaro"
+            app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/textInputEditTextConfirmPassword"
@@ -157,6 +195,7 @@
                 android:foregroundTint="#221F1F"
                 android:hint="@string/hint_confirm_password"
                 android:inputType="textPassword"
+                android:maxLength="16"
                 android:maxLines="1"
                 android:textColor="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -177,7 +216,7 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="40dp"
             android:textSize="16sp"
             android:fontFamily="@font/poppins_medium"
             android:textColor="@color/white"

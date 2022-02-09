@@ -13,19 +13,21 @@ class ActivityHome : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+        supportActionBar!!.hide()
 
         btnHoLogin = findViewById(R.id.loginHoBtn)
         btnCadastro = findViewById(R.id.cadastroHoBtn)
 
+        //i = abreviação de intent
         //Botao que faz ir da Home para LoginActivity
         btnHoLogin.setOnClickListener {
-            val intent0 = Intent(applicationContext, ActivityLogin::class.java)
-            startActivity(intent0)
+            val i0 = Intent(applicationContext, ActivityLogin::class.java)
+            startActivity(i0)
         }
         //Botao que faz ir da Home para CadastroActivity
         btnCadastro.setOnClickListener {
-            val intent1 = Intent(applicationContext, ActivityRegister::class.java)
-            startActivity(intent1)
+            val i1 = Intent(applicationContext, ActivityRegister::class.java)
+            startActivity(i1)
         }
 
     }

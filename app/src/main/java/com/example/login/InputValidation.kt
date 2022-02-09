@@ -18,7 +18,7 @@ class InputValidation
     (private val context: Context) {
 
     /**
-     * method to check InputEditText filled .
+     * Verifica se os edittext estão preenchidos
      *
      * @param textInputEditText
      * @param textInputLayout
@@ -40,7 +40,7 @@ class InputValidation
 
 
     /**
-     * method to check InputEditText has valid email .
+     * Verifica se os edit text tem email válidos
      *
      * @param textInputEditText
      * @param textInputLayout
@@ -60,7 +60,7 @@ class InputValidation
     }
 
     /**
-     * method to check both InputEditText value matches.
+     * Verifica se há correspondencia de valores entre os edit text
      *
      * @param textInputEditText1
      * @param textInputEditText2
@@ -82,7 +82,7 @@ class InputValidation
     }
 
     /**
-     * method to Hide keyboard
+     * Esconde o teclado
      *
      * @param view
      */

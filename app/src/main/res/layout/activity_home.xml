@@ -7,9 +7,6 @@
     android:background="@color/laranjahome"
     tools:context=".model.ActivityHome">
 
-
-
-
     <TextView
         android:id="@+id/titleLabelTv"
         style="@style/TextAppearance.AppCompat.Headline"
