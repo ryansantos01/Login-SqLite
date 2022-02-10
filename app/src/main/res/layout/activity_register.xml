@@ -98,7 +98,8 @@
                 android:fontFamily="@font/poppins_medium"
                 android:foregroundTint="#191717"
                 android:hint="@string/hint_coren"
-                android:inputType="textEmailAddress"
+                android:maxLength="6"
+                android:inputType="number"
                 android:maxLines="1"
                 android:textColor="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>

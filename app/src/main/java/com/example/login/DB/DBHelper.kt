@@ -38,24 +38,12 @@ class DBHelper(context: Context, factory: SQLiteDatabase.CursorFactory?) :
         onCreate(db)
     }
 
-    // Adiciona os dados no banco de dados
-    fun addName(name : String, email : String, coren: String, password : String){
-        val values = ContentValues()
-        val db = this.writableDatabase
-        values.put(COLUMN_USER_NAME, name)
-        values.put(COLUMN_USER_EMAIL, email)
-        values.put(COLUMN_USER_PASSWORD,password)
-        values.put(COLUMN_USER_COREN, coren)
-        db.insert(TABLE_NAME, null, values)
-        db.close()
-    }
-
     fun getName(): Cursor? {
-
         val db = this.readableDatabase
         return db.rawQuery("SELECT * FROM " + TABLE_NAME, null)
 
     }
+    // Adiciona os dados no banco de dados
     fun addUser(user: User) {
         val db = this.writableDatabase
         val values = ContentValues()
@@ -66,8 +54,6 @@ class DBHelper(context: Context, factory: SQLiteDatabase.CursorFactory?) :
         db.insert(TABLE_NAME, null, values)
         db.close()
     }
-
-    //fun getUser Fazer depois
 
     fun getAllUser(): ArrayList<User> {
         val columns = arrayOf(COLUMN_USER_ID, COLUMN_USER_EMAIL, COLUMN_USER_NAME, COLUMN_USER_COREN, COLUMN_USER_PASSWORD)
