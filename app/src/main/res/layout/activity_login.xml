@@ -124,15 +124,35 @@
                     android:textColor="@color/black" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!--AvisodeCadastro-->
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/textViewLinkRegister"
-                android:layout_width="wrap_content"
+            <LinearLayout
+
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_medium"
-                android:text="@string/text_not_member"
-                android:textColor="@color/white"
-                android:textSize="16sp" />
+                android:orientation="horizontal">
+
+                <!--AvisodeCadastro-->
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewLinkRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="114dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/text_not_member"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <!--AvisodeEsqueceusenha-->
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewLinkEsqueceusenha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/esqueceu_a_senha"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/ButtonLogin"

@@ -6,12 +6,15 @@
         <entry key="..\:/Users/Cotuca/Downloads/Aplicativos importantes/login/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2064814814814815" />
         <entry key="..\:/Users/Cotuca/Downloads/Aplicativos importantes/login/app/src/main/res/drawable/background_botao.xml" value="0.2064814814814815" />
         <entry key="..\:/Users/Cotuca/Downloads/Aplicativos importantes/login/app/src/main/res/drawable/background_caixa.xml" value="0.2064814814814815" />
+        <entry key="..\:/Users/Cotuca/Downloads/Aplicativos importantes/login/app/src/main/res/drawable/background_retangulo.xml" value="0.1975" />
         <entry key="..\:/Users/Cotuca/Downloads/Aplicativos importantes/login/app/src/main/res/drawable/background_triangulo.xml" value="0.2203125" />
         <entry key="..\:/Users/Cotuca/Downloads/Aplicativos importantes/login/app/src/main/res/drawable/background_triangulo1.xml" value="0.2203125" />
         <entry key="..\:/Users/Cotuca/Downloads/Aplicativos importantes/login/app/src/main/res/drawable/gradiente.xml" value="0.2064814814814815" />
+        <entry key="..\:/Users/Cotuca/Downloads/Aplicativos importantes/login/app/src/main/res/layout/activity_esqueciasenha.xml" value="0.25" />
         <entry key="..\:/Users/Cotuca/Downloads/Aplicativos importantes/login/app/src/main/res/layout/activity_home.xml" value="0.25" />
-        <entry key="..\:/Users/Cotuca/Downloads/Aplicativos importantes/login/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/Cotuca/Downloads/Aplicativos importantes/login/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/Users/Cotuca/Downloads/Aplicativos importantes/login/app/src/main/res/layout/activity_main.xml" value="0.17" />
+        <entry key="..\:/Users/Cotuca/Downloads/Aplicativos importantes/login/app/src/main/res/layout/activity_novasenha.xml" value="0.25" />
         <entry key="..\:/Users/Cotuca/Downloads/Aplicativos importantes/login/app/src/main/res/layout/activity_register.xml" value="0.21" />
         <entry key="..\:/Users/Cotuca/Downloads/Aplicativos importantes/login/app/src/main/res/layout/activity_users_list.xml" value="0.2" />
         <entry key="..\:/Users/Cotuca/Downloads/Aplicativos importantes/login/app/src/main/res/layout/item_user_recycler.xml" value="0.33" />

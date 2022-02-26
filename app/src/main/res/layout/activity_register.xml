@@ -11,8 +11,9 @@
     android:paddingTop="20dp"
     android:fillViewport="true"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".model.ActivityLogin">
+    tools:context=".model.ActivityRegister">
 
+<!-- Parte do Login   -->
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

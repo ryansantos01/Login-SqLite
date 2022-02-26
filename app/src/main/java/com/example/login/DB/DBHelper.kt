@@ -106,6 +106,24 @@ class DBHelper(context: Context, factory: SQLiteDatabase.CursorFactory?) :
         db.close()
     }
 
+//    fun updatePassword (email: String, password: String){
+//        val db = this.writableDatabase
+//        val values = ContentValues()
+//        values.put(COLUMN_USER_PASSWORD, password)
+//        db.update(
+//            TABLE_NAME, values, "$COLUMN_USER_PASSWORD = ?", arrayOf(password))
+//        db.close()
+//    }
+
+    fun updatePassword(email: String, password: String?) {
+        val db = this.writableDatabase
+        val values = ContentValues()
+        values.put(COLUMN_USER_PASSWORD, password)
+        db.update(TABLE_NAME, values, "$COLUMN_USER_EMAIL = ?", arrayOf(email))
+        db.close()
+    }
+
+
     fun checkUser(email: String): Boolean {
         val columns = arrayOf(COLUMN_USER_ID)
         val db = this.readableDatabase

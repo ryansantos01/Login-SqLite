@@ -10,14 +10,16 @@
     <string name="error_message_name">Digite seu nome completo</string>
     <string name="error_message_coren">Digite seu coren</string>
     <string name="error_message_email">Digite um email válido</string>
+    <string name="error_message_email1">Por favor, insira seu email</string>
     <string name="error_message_age">Digite a idade</string>
     <string name="error_message_password">Digite a senha</string>
     <string name="success_message">Cadastro finalizado com sucesso!</string>
-    <string name="text_not_member">Já se cadastrou? Cadastre-se</string>
+    <string name="text_not_member"><U>Cadastre-se</U></string>
     <string name="text_already_member">Já é um membro? Faça o login</string>
     <string name="error_email_exists">Email já existente</string>
     <string name="error_password_match">Senha não correspondente</string>
     <string name="error_valid_email_password">Email e/ou senha inválidos!</string>
+    <string name="error_valid_email_password2">Email inválido!</string>
     <string name="action_settings">Settings</string>
     <string name="text_hello">Olá,</string>
     <string name="text_title">MED.NOW</string>
@@ -26,4 +28,5 @@
     <string name="med_now">MED.NOW</string>
     <string name="text_helper">Obrigatório</string>
     <string name="hint_coren">Coren</string>
+    <string name="esqueceu_a_senha"><U>Esqueceu a senha?</U></string>
 </resources>

@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Login">
         <activity
+            android:name=".NovasenhaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EsqueciasenhaActivity"
+            android:exported="false" />
+        <activity
             android:name=".model.ActivityLogin"
             android:exported="true" />
         <activity

@@ -11,13 +11,14 @@ import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatTextView
 import android.view.View
 import com.example.login.DB.DBHelper
+import com.example.login.EsqueciasenhaActivity
 import com.example.login.InputValidation
 import com.example.login.R
-import com.example.login.databinding.ActivityLoginBinding
+//import com.example.login.databinding.ActivityLoginBinding
 
 
 class ActivityLogin : AppCompatActivity(), View.OnClickListener {
-    private lateinit var binding: ActivityLoginBinding
+//    private lateinit var binding: ActivityLoginBinding
     private val activity = this@ActivityLogin
 
     private lateinit var nestedScrollView: NestedScrollView
@@ -27,6 +28,7 @@ class ActivityLogin : AppCompatActivity(), View.OnClickListener {
     private lateinit var textInputEditTextPassword: TextInputEditText
     private lateinit var appCompatButtonLogin: AppCompatButton
     private lateinit var textViewLinkRegister: AppCompatTextView
+    private lateinit var textViewLinkEsqueceusenha: AppCompatTextView
     private lateinit var inputValidation: InputValidation
     private lateinit var databaseHelper: DBHelper
 
@@ -51,6 +53,7 @@ class ActivityLogin : AppCompatActivity(), View.OnClickListener {
         textInputEditTextPassword = findViewById(R.id.EditTextPassword) as TextInputEditText
         appCompatButtonLogin = findViewById(R.id.ButtonLogin) as AppCompatButton
         textViewLinkRegister = findViewById(R.id.textViewLinkRegister) as AppCompatTextView
+        textViewLinkEsqueceusenha = findViewById(R.id.textViewLinkEsqueceusenha) as AppCompatTextView
 
     }
 
@@ -61,6 +64,7 @@ class ActivityLogin : AppCompatActivity(), View.OnClickListener {
 
         appCompatButtonLogin!!.setOnClickListener(this)
         textViewLinkRegister!!.setOnClickListener(this)
+        textViewLinkEsqueceusenha!!.setOnClickListener(this)
     }
 
     /**
@@ -80,9 +84,15 @@ class ActivityLogin : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View) {
         when (v.id) {
             R.id.ButtonLogin -> verifyFromSQLite()
+
             R.id.textViewLinkRegister -> {
                 val intentRegister = Intent(applicationContext, ActivityRegister::class.java)
                 startActivity(intentRegister)
+            }
+
+            R.id.textViewLinkEsqueceusenha -> {
+                val intentSenha = Intent(applicationContext, EsqueciasenhaActivity::class.java)
+                startActivity(intentSenha)
             }
         }
     }
