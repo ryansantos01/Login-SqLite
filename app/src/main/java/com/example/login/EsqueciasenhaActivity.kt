@@ -68,22 +68,6 @@ class EsqueciasenhaActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-//    private fun verifyFromSQLite() {
-//
-//        if (!inputValidation!!.isInputEditTextFilled(textInputEditTextEmail!!, textInputLayoutEmail!!, getString(R.string.error_message_email1))) {
-//            return
-//        }
-//        if (databaseHelper!!.checkUser(textInputEditTextEmail!!.text.toString().trim { it <= ' ' })) {
-//            val accountsIntent = Intent(this, NovasenhaActivity::class.java)
-//            accountsIntent.putExtra("EMAIL", textInputEditTextEmail!!.text.toString().trim { it <= ' ' })
-//            emptyInputEditText()
-//            startActivity(accountsIntent)
-//        }
-//        else {
-//            Snackbar.make(nestedScrollView!!, getString(R.string.error_valid_email_password2), Snackbar.LENGTH_LONG).show()
-//        }
-//    }
-
     private fun emptyInputEditText() {
         textInputEditTextEmail!!.text = null
     }
